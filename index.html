@@ -9,47 +9,53 @@
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
         <div>
-            <h1 class="cabecalho">TechStore</h1>
-            <a href="">Início</a>
-            <a href="">Produtos</a>
-            <a href="">Serviços</a>
-            <a href="">contato</a>
+            <h1 class="titulo">TechStore</h1>
+            <a class="menu" href="">Início</a>
+            <a class="menu" href="">Produtos</a>
+            <a class="menu" href="">Serviços</a>
+            <a class="menu" href="">contato</a>
         </div>
     </header>
 
     <div class="subtitulo">
-        <p>tecnologia para o seu dia a dia</p>
-        <h1>equipamentos e acessórios de informatica</h1>
+        <p>Tecnologia para o seu dia a dia</p>
+        <h1>Equipamentos e acessórios de informatica</h1>
         <p>Notebooks, perifericos e componentes com qualidade e bons preços</p>
-        <a href="#produtosCard">ver produtos</a>
+        <button class="btnBanner" href="#produtosCard">Ver produtos</button>
     </div>
 
-    <div class="produtosCard" id="CardProdutos">
-        <div>
-            <div class="imgCard">imgcard1</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloremque distinctio deserunt ipsum
-                mollitia blanditiis debitis, fugit nemo repellendus amet deleniti velit dicta aut tempore perspiciatis
-                ipsa! Dignissimos, eaque placeat?</div>
-            <a href="linkComprar">Comprar</a>
+    <h2>Produtos em destaque</h2>
+    <div id="cardsProdutos">
+        <div class="produtoCard">
+            <img src="https://files.tecnoblog.net/wp-content/uploads/2020/06/xiaomi-mi-notebook-15-pro.jpg" alt="Notebook Pro 15" class="img">
+            <div>
+                <h3>Notebook Pro 15</h3>
+                <p>Intel Core i5, 16 GB de Ram e SSD de 512 GB.</p>
+                <h3>R$ 3.499,00</h3>
+            </div>
+            <button class="btnCard" href="linkComprar">Comprar</button>
         </div>
-        <div>
-            <div class="imgCard" >imgcardd2</div>
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, officia nam placeat at cumque doloribus
-                accusamus autem inventore totam praesentium dolore perspiciatis animi voluptas. Ipsa molestiae minus
-                maxime reprehenderit vero?</div>
-            <a href="linkComprar">Comprar</a>
+        <div class="produtoCard">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomuifPRRXNS2pFoVhsrlgTJmFhrrNwwB00yMNSBsbLZPZowmFACB7-bio&s=10" alt="Mouse Gamer" class="img">
+            <div>
+                <h3>Mouse Gamer</h3>
+                <p>Sensor preciso, iluminação RGB e design ergonômico.</p>
+                <h3>R$ 149,90</h3>
+            </div>
+            <button class="btnCard" href="linkComprar">Comprar</button>
         </div>
-        <div>
-            <div class="imgCard">imgcard3</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae sed, ipsam necessitatibus iure
-                quidem magni, animi officiis officia recusandae, dignissimos commodi repellendus fugiat quae sunt
-                consequuntur quos nisi quibusdam.</div>
-            <a href="linkComprar">Comprar</a>
+        <div class="produtoCard">
+            <img src="https://manjatech.com.br/_astro/cover.ChGZDQta_dsXof.webp" alt="Teclado mecânico" class="img">
+            <div>
+                <h3>Teclado Mêcanico</h3>
+                <p>Teclas mecânicas, iluminação LED e conexão USB.</p>
+                <h3>R$ 279,90</h3>
+            </div>
+            <button class="btnCard" href="linkComprar">Comprar</button>
         </div>
     </div>
-
 
     <div class="TabelaServicos">
         <h2>Serviços</h2>
@@ -68,35 +74,40 @@
                     <td>R$ 120,00</td>
                 </tr>
                 <tr>
-
-                    <td>limpeza</td>    
+                    <td>Limpeza</td>    
                     <td>Manutenção preventiva</td>
                     <td>R$ 80,00</td>
                 </tr>
                 <tr>
-
-                    <td>upgrade</td>
+                    <td>Upgrade</td>
                     <td>Instalação de memoria e SSD</td>
-                    <td>apartir de R$ 60,00</td>
+                    <td>A partir de R$ 60,00</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-
     <div class="contato">
         <div class="contatoTexto">
-
+            <h2>Entre em contato</h2>
+            <p>Envie uma mensagem para nossa equipe.</p>
         </div>
         <div class="ContatoFormulario">
-
+            <form>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" placeholder="Digite seu nome"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" placeholder="Digite seu e-mail"><br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="20" placeholder="Digite sua mensagem"></textarea><br>
+                <input type="submit" value="Enviar" class="btnCard">
+            </form>
         </div>
     </div>
 
     <footer class="rodape">
         <div class="rodapeTexto"></div>
     </footer>
-
 </body>
 
 </html>
