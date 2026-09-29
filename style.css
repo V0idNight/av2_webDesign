@@ -1,0 +1,24 @@
+.cabecalho {
+    display: inline-block;
+}
+.produtosCard {
+    display: flex;
+}
+
+table, td {
+    border-bottom: 1px lightgray solid;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #000025;
+    color: white;
+}
+
+th, td {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 50px;
+    text-align: left;
+}
