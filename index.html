@@ -9,53 +9,76 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <h1>techStore</h1>
-        <div>
-            <a href="">Início</a>
-            <a href="">Produtos</a>
-            <a href="">Serviços</a>
-            <a href="">contato</a>
+    <header id="cabecalho">
+        <div style="display: flex;">
+            <h1 class="titulo">TechStore</h1>
+            <div id="menu">
+                <div class="menuContainer">
+                    <a class="menuOpcao" href="">Início</a>
+                </div>
+                <div class="menuContainer">
+                    <a class="menuOpcao" href="">Produtos</a>
+                </div>
+                <div class="menuContainer">
+                    <a class="menuOpcao" href="">Serviços</a>
+                </div>
+                <div class="menuContainer">
+                    <a class="menuOpcao" href="">Contato</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <div class="subtitulo">
-        <p>tecnologia para o seu dia a dia</p>
-        <h1>equipamentos e acessórios de informatica</h1>
-        <p>Notebooks, perifericos e componentes com qualidade e bons preços</p>
-        <a href="#produtosCard">ver produtos</a>
-    </div>
-
-    <div class="produtosCard" id="CardProdutos">
         <div>
-            <div class="imgCard">imgcard1</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloremque distinctio deserunt ipsum
-                mollitia blanditiis debitis, fugit nemo repellendus amet deleniti velit dicta aut tempore perspiciatis
-                ipsa! Dignissimos, eaque placeat?</div>
-            <a href="linkComprar">Comprar</a>
-        </div>
-        <div>
-            <div class="imgCard" >imgcardd2</div>
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, officia nam placeat at cumque doloribus
-                accusamus autem inventore totam praesentium dolore perspiciatis animi voluptas. Ipsa molestiae minus
-                maxime reprehenderit vero?</div>
-            <a href="linkComprar">Comprar</a>
-        </div>
-        <div>
-            <div class="imgCard">imgcard3</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae sed, ipsam necessitatibus iure
-                quidem magni, animi officiis officia recusandae, dignissimos commodi repellendus fugiat quae sunt
-                consequuntur quos nisi quibusdam.</div>
-            <a href="linkComprar">Comprar</a>
+            <p>Tecnologia para o seu dia a dia</p>
+            <h1 style="overflow-wrap: break-word;">Equipamentos e acessórios de informática</h1>
+            <p>Notebooks, perifericos e componentes com qualidade e bons preços</p>
+            <button class="btnBanner" href="#cardsProdutos">Ver produtos</button>
         </div>
     </div>
 
+    <div class="sessao">
+        <h2 style="margin-left: 60px;">Produtos em destaque</h2>
+        <div class="cardsProdutos">
+            <div class="produtoCard" style="margin-left: 60px; margin-right: 20px;">
+                <img src="https://files.tecnoblog.net/wp-content/uploads/2020/06/xiaomi-mi-notebook-15-pro.jpg"
+                    alt="Notebook Pro 15" class="img">
+                <div class="textCard">
+                    <h3>Notebook Pro 15</h3>
+                    <p>Intel Core i5, 16 GB de Ram e SSD de 512 GB.</p>
+                    <h3>R$ 3.499,00</h3>
+                    <button class="btnCard" href="linkComprar">Comprar</button>
+                </div>
+            </div>
+            <div class="produtoCard">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomuifPRRXNS2pFoVhsrlgTJmFhrrNwwB00yMNSBsbLZPZowmFACB7-bio&s=10"
+                    alt="Mouse Gamer" class="img">
+                <div class="textCard">
+                    <h3>Mouse Gamer</h3>
+                    <p>Sensor preciso, iluminação RGB e design ergonômico.</p>
+                    <h3>R$ 149,90</h3>
+                    <button class="btnCard" href="linkComprar">Comprar</button>
+                </div>
+            </div>
+            <div class="produtoCard" style="margin-left: 20px; margin-right: 60px;">
+                <img src="https://manjatech.com.br/_astro/cover.ChGZDQta_dsXof.webp" alt="Teclado mecânico" class="img">
+                <div class="textCard">
+                    <h3>Teclado Mêcanico</h3>
+                    <p>Teclas mecânicas, iluminação LED e conexão USB.</p>
+                    <h3>R$ 279,90</h3>
+                    <button class="btnCard" href="linkComprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="TabelaServicos">
+        <h2>Serviços</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Servico</th>
+                    <th>Serviço</th>
                     <th>Descrição</th>
                     <th>Valor</th>
                 </tr>
@@ -67,35 +90,43 @@
                     <td>R$ 120,00</td>
                 </tr>
                 <tr>
-
-                    <td>limpeza</td>    
+                    <td>Limpeza</td>
                     <td>Manutenção preventiva</td>
                     <td>R$ 80,00</td>
                 </tr>
                 <tr>
-
-                    <td>upgrade</td>
+                    <td>Upgrade</td>
                     <td>Instalação de memoria e SSD</td>
-                    <td>apartir de R$ 60,00</td>
+                    <td>A partir de R$ 60,00</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-
     <div class="contato">
         <div class="contatoTexto">
-
+            <h2>Entre em contato</h2>
+            <p>Envie uma mensagem para nossa equipe.</p>
         </div>
-        <div class="ContatoFormulario">
-
+        <div class="contatoFormulario">
+            <form>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" placeholder="Digite seu nome"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" placeholder="Digite seu e-mail"><br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="20"
+                    placeholder="Digite sua mensagem"></textarea><br>
+                <input type="submit" value="Enviar" class="btnCard" style="margin-top: 8px;">
+            </form>
         </div>
     </div>
 
-    <footer class="rodape">
-        <div class="rodapeTexto"></div>
+    <footer id="rodape">
+        <div class="rodapeTexto">
+            © 2026 TechStore - Loja Virtual de Informática
+        </div>
     </footer>
-
 </body>
 
 </html>
