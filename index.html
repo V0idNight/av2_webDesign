@@ -9,51 +9,67 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div>
+    <header id="cabecalho">
+        <div style="display: flex;">
             <h1 class="titulo">TechStore</h1>
-            <a class="menu" href="">Início</a>
-            <a class="menu" href="">Produtos</a>
-            <a class="menu" href="">Serviços</a>
-            <a class="menu" href="">contato</a>
+            <div id="menu">
+                <div class="menuContainer">
+                    <a class="menuOpcao" href="">Início</a>
+                </div>
+                <div class="menuContainer">
+                    <a class="menuOpcao" href="">Produtos</a>
+                </div>
+                <div class="menuContainer">
+                    <a class="menuOpcao" href="">Serviços</a>
+                </div>
+                <div class="menuContainer">
+                    <a class="menuOpcao" href="">Contato</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <div class="subtitulo">
-        <p>Tecnologia para o seu dia a dia</p>
-        <h1>Equipamentos e acessórios de informatica</h1>
-        <p>Notebooks, perifericos e componentes com qualidade e bons preços</p>
-        <button class="btnBanner" href="#produtosCard">Ver produtos</button>
+        <div>
+            <p>Tecnologia para o seu dia a dia</p>
+            <h1 style="overflow-wrap: break-word;">Equipamentos e acessórios de informática</h1>
+            <p>Notebooks, perifericos e componentes com qualidade e bons preços</p>
+            <button class="btnBanner" href="#cardsProdutos">Ver produtos</button>
+        </div>
     </div>
 
-    <h2>Produtos em destaque</h2>
-    <div id="cardsProdutos">
-        <div class="produtoCard">
-            <img src="https://files.tecnoblog.net/wp-content/uploads/2020/06/xiaomi-mi-notebook-15-pro.jpg" alt="Notebook Pro 15" class="img">
-            <div>
-                <h3>Notebook Pro 15</h3>
-                <p>Intel Core i5, 16 GB de Ram e SSD de 512 GB.</p>
-                <h3>R$ 3.499,00</h3>
+    <div class="sessao">
+        <h2 style="margin-left: 60px;">Produtos em destaque</h2>
+        <div class="cardsProdutos">
+            <div class="produtoCard" style="margin-left: 60px; margin-right: 20px;">
+                <img src="https://files.tecnoblog.net/wp-content/uploads/2020/06/xiaomi-mi-notebook-15-pro.jpg"
+                    alt="Notebook Pro 15" class="img">
+                <div class="textCard">
+                    <h3>Notebook Pro 15</h3>
+                    <p>Intel Core i5, 16 GB de Ram e SSD de 512 GB.</p>
+                    <h3>R$ 3.499,00</h3>
+                    <button class="btnCard" href="linkComprar">Comprar</button>
+                </div>
             </div>
-            <button class="btnCard" href="linkComprar">Comprar</button>
-        </div>
-        <div class="produtoCard">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomuifPRRXNS2pFoVhsrlgTJmFhrrNwwB00yMNSBsbLZPZowmFACB7-bio&s=10" alt="Mouse Gamer" class="img">
-            <div>
-                <h3>Mouse Gamer</h3>
-                <p>Sensor preciso, iluminação RGB e design ergonômico.</p>
-                <h3>R$ 149,90</h3>
+            <div class="produtoCard">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomuifPRRXNS2pFoVhsrlgTJmFhrrNwwB00yMNSBsbLZPZowmFACB7-bio&s=10"
+                    alt="Mouse Gamer" class="img">
+                <div class="textCard">
+                    <h3>Mouse Gamer</h3>
+                    <p>Sensor preciso, iluminação RGB e design ergonômico.</p>
+                    <h3>R$ 149,90</h3>
+                    <button class="btnCard" href="linkComprar">Comprar</button>
+                </div>
             </div>
-            <button class="btnCard" href="linkComprar">Comprar</button>
-        </div>
-        <div class="produtoCard">
-            <img src="https://manjatech.com.br/_astro/cover.ChGZDQta_dsXof.webp" alt="Teclado mecânico" class="img">
-            <div>
-                <h3>Teclado Mêcanico</h3>
-                <p>Teclas mecânicas, iluminação LED e conexão USB.</p>
-                <h3>R$ 279,90</h3>
+            <div class="produtoCard" style="margin-left: 20px; margin-right: 60px;">
+                <img src="https://manjatech.com.br/_astro/cover.ChGZDQta_dsXof.webp" alt="Teclado mecânico" class="img">
+                <div class="textCard">
+                    <h3>Teclado Mêcanico</h3>
+                    <p>Teclas mecânicas, iluminação LED e conexão USB.</p>
+                    <h3>R$ 279,90</h3>
+                    <button class="btnCard" href="linkComprar">Comprar</button>
+                </div>
             </div>
-            <button class="btnCard" href="linkComprar">Comprar</button>
         </div>
     </div>
 
@@ -74,7 +90,7 @@
                     <td>R$ 120,00</td>
                 </tr>
                 <tr>
-                    <td>Limpeza</td>    
+                    <td>Limpeza</td>
                     <td>Manutenção preventiva</td>
                     <td>R$ 80,00</td>
                 </tr>
@@ -99,7 +115,8 @@
                 <label for="email">Email</label><br>
                 <input type="text" id="email" placeholder="Digite seu e-mail"><br>
                 <label for="mensagem">Mensagem</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="20" placeholder="Digite sua mensagem"></textarea><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="20"
+                    placeholder="Digite sua mensagem"></textarea><br>
                 <input type="submit" value="Enviar" class="btnCard">
             </form>
         </div>
